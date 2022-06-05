@@ -14,7 +14,11 @@ class CreateCarPartImagesTable extends Migration
     public function up()
     {
         Schema::create('car_part_images', function (Blueprint $table) {
-            $table->id();
+            $table->engine = 'InnoDB';
+            $table->id()->comment('Identificador Unico');
+            $table->string('name')->unique()->comment('Nombre');
+            $table->text('part_comment')->comment('Texto de la imagen');
+            $table->text('path')->unique()->comment('Ruta de Imagen');
             $table->timestamps();
         });
     }
