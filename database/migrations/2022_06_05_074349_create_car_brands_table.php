@@ -17,9 +17,10 @@ class CreateCarBrandsTable extends Migration
             $table->engine = 'InnoDB';
             $table->id()->comment('Identificador Unico');
             $table->string('name',150)->unique()->comment('Nombre');
+            $table->text('description')->nullable()->comment('Descripcion de Marca de carro');
+            $table->text('image')->comment('Imagen de Marca');
             $table->integer('counter')->default('0')->comment('Contador de Ratings');
             $table->boolean('active')->default('1')->comment('0=Desactivado, 1=Activo');
-            $table->text('image')->comment('Imagen de Marca');
             $table->timestamps();
         });
     }

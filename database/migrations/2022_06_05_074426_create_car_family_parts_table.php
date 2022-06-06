@@ -18,6 +18,7 @@ class CreateCarFamilyPartsTable extends Migration
 			$table->engine = 'InnoDB';
             $table->id()->comment('Identificador Unico');
             $table->string('name',150)->unique()->comment('Nombre');
+            $table->text('description')->nullable()->comment('Descripcion de Familia de partes de carro');
             $table->integer('counter')->default('0')->comment('Contador de Ratings');
             $table->boolean('active')->default('1')->comment('0=Desactivado, 1=Activo');
             $table->timestamps();
