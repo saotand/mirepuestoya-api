@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class CarFamilyPart extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'description',
+        'counter',
+        'active'
+    ];
 }
