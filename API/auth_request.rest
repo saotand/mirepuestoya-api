@@ -1,0 +1,23 @@
+@URL=http://127.0.0.1:8000/api
+@AUTH=
+
+###
+POST {{ URL }}/register HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+{
+    "name":"David",
+    "email":"saotand@gmail.com",
+    "password":"d0708aca"
+}
+
+###
+POST {{ URL }}/login HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+{
+    "email":"saotand@gmail.com",
+    "password":"d0708aca"
+}
