@@ -42,4 +42,11 @@ class AuthController extends Controller
 
     }
 
+    public function salida( Request $request){
+        $request->user()->currentAccessToken()->delete();
+        return response()->json([
+            'message'=> 'Has Salido del sistema'
+        ]);
+    }
+
 }
