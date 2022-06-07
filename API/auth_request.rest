@@ -1,7 +1,7 @@
 @URL=http://127.0.0.1:8000/api
-@AUTH=
+@AUTH=3|NmGOhpxbGtaM4zFK9QsJf6AbpGTNK5guQGOmbDrB
 
-###
+######################################
 POST {{ URL }}/register HTTP/1.1
 Accept: application/json
 content-type: application/json
@@ -12,8 +12,8 @@ content-type: application/json
     "password":"d0708aca"
 }
 
-###
-POST {{ URL }}/login HTTP/1.1
+######################################
+POST {{URL}}/login HTTP/1.1
 Accept: application/json
 content-type: application/json
 
@@ -21,3 +21,9 @@ content-type: application/json
     "email":"saotand@gmail.com",
     "password":"d0708aca"
 }
+
+######################################
+POST {{ URL }}/logout HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}
