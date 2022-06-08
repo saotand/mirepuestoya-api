@@ -13,7 +13,7 @@ class StoreCarBrandRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class StoreCarBrandRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|unique:car_brands,name',
+            'image' => 'nullable',
+            'description' => 'nullable',
+            'counter'=> 'numeric',
+            'active'=> 'boolean'
         ];
     }
 }
