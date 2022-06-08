@@ -5,6 +5,7 @@
 POST {{ URL }}/register HTTP/1.1
 Accept: application/json
 content-type: application/json
+Connection: keep-alive
 
 {
     "name":"David",
