@@ -17,7 +17,7 @@ class CreateCarPartsTable extends Migration
             $table->engine = 'InnoDB';
             $table->id()->comment('Identificador Unico');
             $table->string('name',150)->unique()->comment('Nombre');
-            $table->text('image')->comment('Imagen de Partes de carro');
+            $table->text('image')->nullable()->comment('Imagen de Partes de carro');
             $table->text('description')->nullable()->comment('Descripcion de Partes de carro');
             $table->integer('counter')->default('0')->comment('Contador de Ratings');
             $table->boolean('active')->default('1')->comment('0=Desactivado, 1=Activo');
