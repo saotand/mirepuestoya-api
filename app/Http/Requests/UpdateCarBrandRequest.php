@@ -13,7 +13,7 @@ class UpdateCarBrandRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class UpdateCarBrandRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|unique:car_brands,id,'.$this->route('carbrand')->id,
+            'image' => 'nullable',
+            'description' => 'nullable',
+            'counter'=> 'numeric',
+            'active'=> 'boolean'
         ];
     }
 }
