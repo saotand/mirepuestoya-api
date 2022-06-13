@@ -19,27 +19,6 @@ class CarModelController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreCarModelRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreCarModelRequest $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Models\CarModel  $carModel
@@ -51,12 +30,12 @@ class CarModelController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Store a newly created resource in storage.
      *
-     * @param  \App\Models\CarModel  $carModel
+     * @param  \App\Http\Requests\StoreCarModelRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function edit(CarModel $carModel)
+    public function store(StoreCarModelRequest $request)
     {
         //
     }

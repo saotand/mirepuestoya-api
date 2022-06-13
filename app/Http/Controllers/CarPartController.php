@@ -19,27 +19,6 @@ class CarPartController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreCarPartRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreCarPartRequest $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Models\CarPart  $carPart
@@ -51,12 +30,12 @@ class CarPartController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Store a newly created resource in storage.
      *
-     * @param  \App\Models\CarPart  $carPart
+     * @param  \App\Http\Requests\StoreCarPartRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function edit(CarPart $carPart)
+    public function store(StoreCarPartRequest $request)
     {
         //
     }
