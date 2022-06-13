@@ -1,0 +1,59 @@
+@URL=http://127.0.0.1:8000/api
+@AUTH=3|baaQJYm83LYDBoTdE2cpID7k0zFkliv72jUrAAFb
+
+######################################
+GET {{ URL }}/carbrands HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Connection: keep-alive
+
+
+######################################
+GET {{ URL }}/admin/carbrands HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}
+
+
+######################################
+GET {{ URL }}/admin/carbrands/1 HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}
+
+
+######################################
+POST {{ URL }}/admin/carbrands HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}
+
+    {
+        "name":"Chevrolet",
+        "image":null,
+        "description":"Descripcion de Chevrolet",
+        "counter":23,
+        "active":true
+    }
+
+
+######################################
+PUT {{ URL }}/admin/carbrands/3 HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}
+
+    {
+        "name":"Yutong",
+        "image":null,
+        "description":"Descripcion de Yutong",
+        "counter":23,
+        "active":true
+    }
+
+
+######################################
+DELETE {{ URL }}/admin/carbrands/7 HTTP/1.1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer {{AUTH}}

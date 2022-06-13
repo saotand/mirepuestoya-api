@@ -1,5 +1,5 @@
 @URL=http://127.0.0.1:8000/api
-@AUTH=3|NmGOhpxbGtaM4zFK9QsJf6AbpGTNK5guQGOmbDrB
+@AUTH=2|etgQ9pBo9lqSr3piIL31yFXLKPYkFGF63sXYpQXs
 
 ######################################
 POST {{ URL }}/register HTTP/1.1
