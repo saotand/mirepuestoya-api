@@ -6,6 +6,7 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\Routing\Exception\RouteNotFoundException;
+use Illuminate\Validation\ValidationException;
 
 
 class Handler extends ExceptionHandler
@@ -44,14 +45,21 @@ class Handler extends ExceptionHandler
 
     public function render($request, Throwable $exception){
         if($exception instanceof ModelNotFoundException){
-            return response()->json(["res"=>false,"error"=>"Error Modelo no encontrado"],400);
+            return response()->json(["message"=>false,"error"=>"No se ha encontrado"],400);
         }
 
         if($exception instanceof RouteNotFoundException){
-            return response()->json(["res"=>false,"error"=>"No tiene permiso para acceder a esta ruta"],401);
+            return response()->json(["message"=>false,"error"=>"No tiene permiso para acceder a esta ruta"],401);
         }
 
         return parent::render($request, $exception);
+    }
+
+    protected function invalidJson($request, ValidationException $exception){
+        return response()->json([
+            'message'=> __('Los datos Proporcionados no son válidos.'),
+            'errors' => $exception->errors(),
+        ],$exception->status);
     }
 
 
