@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Pluralizer;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -35,6 +36,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //Pluralizer::useLanguage('spanish');
+
         $this->configureRateLimiting();
 
         $this->routes(function () {
@@ -47,6 +50,13 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
+
+        Route::resourceVerbs([
+            'create' => 'crear',
+            'edit' => 'editar',
+            'update'=> 'actualizar',
+            'delete'=> 'eliminar'
+        ]);
     }
 
     /**
@@ -60,4 +70,7 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
         });
     }
+
+
+
 }
