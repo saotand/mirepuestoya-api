@@ -18,8 +18,8 @@ class CarBrandController extends Controller
      // Index para formulario home
     public function index_home()
     {
-        $allbrands = CarBrand::all()->where('active',true)->sortBy('active',0,false);
-        return response(['message' => 'OK', 'data' => $allbrands]);
+        $formbrands = CarBrand::all()->where('active',true)->sortBy('counter',0,true)->values()->all();
+        return response(['message' => 'OK', 'data' => $formbrands ]);
     }
 
     // index para Admin
