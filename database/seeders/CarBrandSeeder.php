@@ -17,502 +17,796 @@ class CarBrandSeeder extends Seeder
     {
         DB::table('car_brands')->insert([
             [
-                "name"=>"ALFA ROMEO",
-                "image"=>null,
-                "description"=>"Descripcion de ALFA ROMEO",
+                "name"=>"Agrale",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Alfa Romeo",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"AMC",
-                "image"=>null,
-                "description"=>"Descripcion de AMC",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"ARO",
-                "image"=>null,
-                "description"=>"Descripcion de ARO",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"AUDI",
-                "image"=>null,
-                "description"=>"Descripcion de AUDI",
+                "name"=>"Aston Martin",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"BERA",
-                "image"=>null,
-                "description"=>"Descripcion de BERA",
+                "name"=>"Audi",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Autogago",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Bentley",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Bera",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"BMW",
-                "image"=>null,
-                "description"=>"Descripcion de BMW",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Bugatti",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Buick",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"BYD",
-                "image"=>null,
-                "description"=>"Descripcion de BYD",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CATERPILLAR",
-                "image"=>null,
-                "description"=>"Descripcion de CATERPILLAR",
+                "name"=>"Cadillac",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CHANA",
-                "image"=>null,
-                "description"=>"Descripcion de CHANA",
+                "name"=>"Calto",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CHERY",
-                "image"=>null,
-                "description"=>"Descripcion de CHERY",
+                "name"=>"Caterpillar",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CHEVROLET",
-                "image"=>null,
-                "description"=>"Descripcion de CHEVROLET",
+                "name"=>"Chana",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CHRYSLER",
-                "image"=>null,
-                "description"=>"Descripcion de CHRYSLER",
+                "name"=>"Changhe",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CINASCAR",
-                "image"=>null,
-                "description"=>"Descripcion de CINASCAR",
+                "name"=>"Chery",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CITROEN",
-                "image"=>null,
-                "description"=>"Descripcion de CITROEN",
+                "name"=>"Chevrolet",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"CUMMINS",
-                "image"=>null,
-                "description"=>"Descripcion de CUMMINS",
+                "name"=>"Chrysler",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"DACIA",
-                "image"=>null,
-                "description"=>"Descripcion de DACIA",
+                "name"=>"Cinascar",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"DAEWOO",
-                "image"=>null,
-                "description"=>"Descripcion de DAEWOO",
+                "name"=>"Citroen",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"DAIHATSU",
-                "image"=>null,
-                "description"=>"Descripcion de DAIHATSU",
+                "name"=>"Conquistador",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"DODGE",
-                "image"=>null,
-                "description"=>"Descripcion de DODGE",
+                "name"=>"Cummings",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"DONGFENG",
-                "image"=>null,
-                "description"=>"Descripcion de DONGFENG",
+                "name"=>"Dacia",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"EMPIRE",
-                "image"=>null,
-                "description"=>"Descripcion de EMPIRE",
+                "name"=>"Daewoo",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"ENCAVA",
-                "image"=>null,
-                "description"=>"Descripcion de ENCAVA",
+                "name"=>"Daihatsu",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"FIAT",
-                "image"=>null,
-                "description"=>"Descripcion de FIAT",
+                "name"=>"Dodge",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"FORD",
-                "image"=>null,
-                "description"=>"Descripcion de FORD",
+                "name"=>"Dongfeng",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"GEELY",
-                "image"=>null,
-                "description"=>"Descripcion de GEELY",
+                "name"=>"EBRO",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"GREAT WALL",
-                "image"=>null,
-                "description"=>"Descripcion de GREAT WALL",
+                "name"=>"Encava",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"HAFEI",
-                "image"=>null,
-                "description"=>"Descripcion de HAFEI",
+                "name"=>"Empire",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"HAIMA",
-                "image"=>null,
-                "description"=>"Descripcion de HAIMA",
+                "name"=>"Ferrari",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"HONDA",
-                "image"=>null,
-                "description"=>"Descripcion de HONDA",
+                "name"=>"Fiat",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"HUMMER",
-                "image"=>null,
-                "description"=>"Descripcion de HUMMER",
+                "name"=>"Ford",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"HYUNDAI",
-                "image"=>null,
-                "description"=>"Descripcion de HYUNDAI",
+                "name"=>"Foton",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"ISUZU",
-                "image"=>null,
-                "description"=>"Descripcion de ISUZU",
+                "name"=>"Freightliner",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"IVECO",
-                "image"=>null,
-                "description"=>"Descripcion de IVECO",
+                "name"=>"Geely",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"JEEP",
-                "image"=>null,
-                "description"=>"Descripcion de JEEP",
+                "name"=>"General Motors",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"KAWASAKI",
-                "image"=>null,
-                "description"=>"Descripcion de KAWASAKI",
+                "name"=>"GMC",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"KIA",
-                "image"=>null,
-                "description"=>"Descripcion de KIA",
+                "name"=>"Great Wall",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"LADA",
-                "image"=>null,
-                "description"=>"Descripcion de LADA",
+                "name"=>"Guri",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"LAND ROVER",
-                "image"=>null,
-                "description"=>"Descripcion de LAND ROVER",
+                "name"=>"Hafei",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"LEXUS",
-                "image"=>null,
-                "description"=>"Descripcion de LEXUS",
+                "name"=>"Haima",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MACK",
-                "image"=>null,
-                "description"=>"Descripcion de MACK",
+                "name"=>"Hino",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MERCEDES BENZ",
-                "image"=>null,
-                "description"=>"Descripcion de MERCEDES BENZ",
+                "name"=>"Honda",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MERCURY",
-                "image"=>null,
-                "description"=>"Descripcion de MERCURY",
+                "name"=>"Howo",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MINI",
-                "image"=>null,
-                "description"=>"Descripcion de MINI",
+                "name"=>"Hummer",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MITSUBISHI",
-                "image"=>null,
-                "description"=>"Descripcion de MITSUBISHI",
+                "name"=>"Hyundai",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"MOTO",
-                "image"=>null,
-                "description"=>"Descripcion de MOTO",
+                "name"=>"Infiniti",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"NISSAN",
-                "image"=>null,
-                "description"=>"Descripcion de NISSAN",
+                "name"=>"International",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Isuzu",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Itarca",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Iveco",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"JAC",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Jaguar",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Jeep",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"JMC",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Kawasaki",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Kia",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Koenigsegg",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Lada",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Lamborghini",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Land Rover",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Lexus",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Lifan",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mack",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Maserati",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"MAZ",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mazda",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"McLaren",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mercedes Benz",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mercury",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mini",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Minicooper",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Mitsubishi",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Moto",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Nissan",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"OPEL",
-                "image"=>null,
-                "description"=>"Descripcion de OPEL",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"PEGASO",
-                "image"=>null,
-                "description"=>"Descripcion de PEGASO",
+                "name"=>"Pagani",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"PEUGEOT",
-                "image"=>null,
-                "description"=>"Descripcion de PEUGEOT",
+                "name"=>"Pegaso",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"PONTIAC",
-                "image"=>null,
-                "description"=>"Descripcion de PONTIAC",
+                "name"=>"Peugeot",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"PORSCHE",
-                "image"=>null,
-                "description"=>"Descripcion de PORSCHE",
+                "name"=>"Pontiac",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"PRODUCTOS",
-                "image"=>null,
-                "description"=>"Descripcion de PRODUCTOS",
+                "name"=>"Porsche",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"RENAULT",
-                "image"=>null,
-                "description"=>"Descripcion de RENAULT",
+                "name"=>"Ram",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"ROVER",
-                "image"=>null,
-                "description"=>"Descripcion de ROVER",
+                "name"=>"Renault",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SAIC WULING",
-                "image"=>null,
-                "description"=>"Descripcion de SAIC WULING",
+                "name"=>"Rolls Royce",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SEAT",
-                "image"=>null,
-                "description"=>"Descripcion de SEAT",
+                "name"=>"Rover",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SKODA",
-                "image"=>null,
-                "description"=>"Descripcion de SKODA",
+                "name"=>"Saab",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SKYGO",
-                "image"=>null,
-                "description"=>"Descripcion de SKYGO",
+                "name"=>"Saic Wuling",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SUBARU",
-                "image"=>null,
-                "description"=>"Descripcion de SUBARU",
+                "name"=>"Sangyong",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"SUZUKI",
-                "image"=>null,
-                "description"=>"Descripcion de SUZUKI",
+                "name"=>"Sany",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"TATA",
-                "image"=>null,
-                "description"=>"Descripcion de TATA",
+                "name"=>"Saturn",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"TOYOTA",
-                "image"=>null,
-                "description"=>"Descripcion de TOYOTA",
+                "name"=>"Scania",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"VARIAS MARCAS",
-                "image"=>null,
-                "description"=>"Descripcion de VARIAS MARCAS",
+                "name"=>"Seat",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"VENIRAUTO",
-                "image"=>null,
-                "description"=>"Descripcion de VENIRAUTO",
+                "name"=>"Skoda",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"VOLKSWAGEN",
-                "image"=>null,
-                "description"=>"Descripcion de VOLKSWAGEN",
+                "name"=>"Skygo",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"VOLVO",
-                "image"=>null,
-                "description"=>"Descripcion de VOLVO",
+                "name"=>"Smart",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"YUTONG",
-                "image"=>null,
-                "description"=>"Descripcion de YUTONG",
+                "name"=>"Subaru",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"WULING",
-                "image"=>null,
-                "description"=>"Descripcion de WULING",
+                "name"=>"Suzuki",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"YAMAHA",
-                "image"=>null,
-                "description"=>"Descripcion de YAMAHA",
+                "name"=>"Tata Motors",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"ZHONGLING",
-                "image"=>null,
-                "description"=>"Descripcion de ZHONGLING",
+                "name"=>"Tesla",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
-                "name"=>"ZOTYE",
-                "image"=>null,
-                "description"=>"Descripcion de ZOTYE",
+                "name"=>"Titan",
+                "image"=>"",
+                "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
+            [
+                "name"=>"Toyota",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Venirauto",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Volkswagen",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Volvo",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Wuling",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Yamaha",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Yutong",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Zhongxing",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ],
+            [
+                "name"=>"Zotye",
+                "image"=>"",
+                "description"=>"Descripcion",
+                "counter"=>0,
+                "active"=>true
+            ]
         ]);
     }
 }
