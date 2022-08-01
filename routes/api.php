@@ -3,9 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\CarBrandController;
-use App\Models\CarBrand;
-
+use App\Http\Controllers\API\CarBrandController;
+use App\Http\Controllers\CarModelController;
+use App\Http\Controllers\CarFamilyPartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,18 +36,39 @@ Route::post('logout', [AuthController::class , 'salida'])->middleware('auth:sanc
 
 // Rutas para formualrio de inicio (home)
 
-    // CarBrands
-    Route::get('carbrands', [CarBrandController::class,'index_home']);
+    // Rutas para uso de formulario (Publico)
+
+
+    Route::get('carbrand', [CarBrandController::class,'index_home']);
+    Route::get('carmodel/{brand}', [CarModelController::class,'index_home']);
+
 
 // Grupo de Rutas con Token
 Route::group(['middleware'=> ['auth:sanctum']], function (){
 
+    // Marcas
+    Route::apiResource('admin/brand',CarBrandController::class);
+
+    // Modelos
+    Route::apiResource('admin/model',CarModelController::class);
+
+    // Familia de partes
+    Route::apiResource('admin/familypart',CarFamilyPartController::class);
+
+    // Partes
+    Route::apiResource('admin/part',CarBrandController::class);
+
+    // Familia de partes
+    Route::apiResource('admin/brand',CarBrandController::class);
+
+
+/*
     Route::get('admin/carbrands',[CarBrandController::class,'index']);
     Route::post('admin/carbrands',[CarBrandController::class,'store']);
     Route::get('admin/carbrands/{carbrand}',[CarBrandController::class,'show']);
     Route::put('admin/carbrands/{carbrand}',[CarBrandController::class,'update']);
     Route::delete('admin/carbrands/{carbrand}',[CarBrandController::class,'destroy']);
-
+*/
 
 });
 

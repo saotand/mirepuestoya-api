@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
+use App\Http\Controllers\Controller;
 use App\Models\CarBrand;
 use App\Http\Requests\StoreCarBrandRequest;
 use App\Http\Requests\UpdateCarBrandRequest;
+use App\Http\Resources\CarBrandResource;
+use App\Http\Resources\CarBrandResourceSelect;
+
 
 
 class CarBrandController extends Controller
@@ -18,14 +22,13 @@ class CarBrandController extends Controller
      // Index para formulario home
     public function index_home()
     {
-        $formbrands = CarBrand::all()->where('active',true)->sortBy('counter',0,true)->values()->all();
-        return response(['message' => 'OK', 'data' => $formbrands ]);
+        return CarBrandResourceSelect::collection(CarBrand::all()->where('active',true)->sortBy('counter',0,true)->values()->all());
     }
 
     // index para Admin
     public function index()
     {
-        $allbrands = CarBrand::all()->sortBy('id',0,false);
+        $allbrands = CarBrandResource::collection(CarBrand::all()->sortBy('id',0,false));
         return response(['message' => 'OK', 'data' => $allbrands]);
     }
 

@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CarPart;
-use App\Http\Requests\StoreCarPartRequest;
-use App\Http\Requests\UpdateCarPartRequest;
+use App\Http\Controllers\Controller;
+use App\Models\CarModel;
+use App\Http\Requests\StoreCarModelRequest;
+use App\Http\Requests\UpdateCarModelRequest;
 
-class CarPartController extends Controller
+class CarModelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,10 +22,10 @@ class CarPartController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CarPart  $carPart
+     * @param  \App\Models\CarModel  $carModel
      * @return \Illuminate\Http\Response
      */
-    public function show(CarPart $carPart)
+    public function show(CarModel $carModel)
     {
         //
     }
@@ -32,10 +33,10 @@ class CarPartController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCarPartRequest  $request
+     * @param  \App\Http\Requests\StoreCarModelRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCarPartRequest $request)
+    public function store(StoreCarModelRequest $request)
     {
         //
     }
@@ -43,11 +44,11 @@ class CarPartController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCarPartRequest  $request
-     * @param  \App\Models\CarPart  $carPart
+     * @param  \App\Http\Requests\UpdateCarModelRequest  $request
+     * @param  \App\Models\CarModel  $carModel
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCarPartRequest $request, CarPart $carPart)
+    public function update(UpdateCarModelRequest $request, CarModel $carModel)
     {
         //
     }
@@ -55,10 +56,10 @@ class CarPartController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CarPart  $carPart
+     * @param  \App\Models\CarModel  $carModel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CarPart $carPart)
+    public function destroy(CarModel $carModel)
     {
         //
     }
