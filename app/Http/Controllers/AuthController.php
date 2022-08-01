@@ -29,7 +29,7 @@ class AuthController extends Controller
 
         if(!$user || !Hash::check($request->password,$user->password)){
             throw ValidationException::withMessages([
-                'message'=> ['Credenciales son Incorrecta']
+                'message'=> ['Credenciales son Incorrectas']
             ]);
         }
 

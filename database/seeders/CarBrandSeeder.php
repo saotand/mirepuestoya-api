@@ -18,21 +18,21 @@ class CarBrandSeeder extends Seeder
         DB::table('car_brands')->insert([
             [
                 "name"=>"Agrale",
-                "image"=>"",
+                "image"=>"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAIAcAigAYkZCTUQwMTAwMGFjMzAzMDAwMGI0MGMwMDAwNTQxNTAwMDBhYjE3MDAwMGVmMTkwMDAwNWQyMDAwMDA3ZTJiMDAwMDJhMmUwMDAwNTYzMDAwMDBiYzMyMDAwMDRkNDgwMDAwHAJnABRJUlR0LWpWNHlIcVJiYy1B",
                 "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"Alfa Romeo",
-                "image"=>"",
+                "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAAAAADRE4smAAAtXUlEQVR42u2d918UxxvHv3/OHEc5RCyggg0LKsQoarBgIxpjDBZMYopYo9iwYC/EiERRgwUbGjtqbNhQQSM2LGdD5BQO5vu6vn1n93bvFub5/AR7uzN787xvd+aZZ575HwJRrf9BEwAAIAAABACAAAAQAAACAEAAAAgAAAEAIAAABACAAAAQAAACA",
                 "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
             ],
             [
                 "name"=>"AMC",
-                "image"=>"",
+                "image"=>"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/7QCcUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAIAcAigAYkZCTUQwMTAwMGFjMzAzMDAwMGI0MGMwMDAwNTQxNTAwMDBhYjE3MDAwMGVmMTkwMDAwNWQyMDAwMDA3ZTJiMDAwMDJhMmUwMDAwNTYzMDAwMDBiYzMyMDAwMDRkNDgwMDAwHAJnABRJUlR0LWpWNHlIcVJiYy1B",
                 "description"=>"Descripcion",
                 "counter"=>0,
                 "active"=>true
