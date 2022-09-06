@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\API;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreCarBrandRequest extends FormRequest
+class StoreCarModelRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoreCarBrandRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -24,11 +24,7 @@ class StoreCarBrandRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:car_brands,name',
-            'image' => 'nullable',
-            'description' => 'nullable',
-            'counter'=> 'numeric',
-            'active'=> 'boolean'
+            //
         ];
     }
 }
