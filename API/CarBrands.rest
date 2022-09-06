@@ -1,0 +1,12 @@
+@URL=http://127.0.0.1:8000/api
+@TOKEN=123123
+
+
+##############################################
+GET {{ URL }}/carbrand/
+Accept: application/json
+
+##############################################
+GET {{ URL }}/admin/brand/
+Accept: application/json
+Authorization: Bearer

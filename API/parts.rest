@@ -1,0 +1,6 @@
+@URL=http://127.0.0.1:8000/api
+@TOKEN=123123
+
+##############################################
+POST {{ URL }}/register/
+Accept: application/json
