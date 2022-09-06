@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\API\AuthRequest;
+use App\Http\Requests\API\RegisterRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Requests\RegisterRequest;
-use App\Http\Requests\AuthRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
-use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -28,9 +30,7 @@ class AuthController extends Controller
         $user = User::where('email', $request->email)->first();
 
         if(!$user || !Hash::check($request->password,$user->password)){
-            throw ValidationException::withMessages([
-                'message'=> ['Credenciales son Incorrectas']
-            ]);
+            throw ValidationException::withMessages(['message'=> ['Credenciales son Incorrectas']]);
         }
 
         $token = $user->createToken($request->email)->plainTextToken;

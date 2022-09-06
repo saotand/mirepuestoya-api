@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\CarBrand;
 use App\Http\Requests\StoreCarBrandRequest;
 use App\Http\Requests\UpdateCarBrandRequest;
 use App\Http\Resources\CarBrandResource;
 use App\Http\Resources\CarBrandResourceSelect;
+use App\Models\CarBrand;
 
 
 
@@ -22,14 +22,15 @@ class CarBrandController extends Controller
      // Index para formulario home
     public function index_home()
     {
-        return CarBrandResourceSelect::collection(CarBrand::all()->where('active',true)->sortBy('counter',0,true)->values()->all());
+        $bransForSelect = CarBrandResourceSelect::collection(CarBrand::where('active',true)->orderBy('counter',"desc")->get());
+        return $bransForSelect;
     }
 
     // index para Admin
     public function index()
     {
         $allbrands = CarBrandResource::collection(CarBrand::all()->sortBy('id',0,false));
-        return response(['message' => 'OK', 'data' => $allbrands]);
+        return $allbrands;
     }
 
     /**
@@ -55,8 +56,11 @@ class CarBrandController extends Controller
      */
     public function store(StoreCarBrandRequest $request)
     {
+        /*
         CarBrand::create($request->all());
         return response(['message' => "Marca Guardada"]);
+        */
+        return new CarBrandResource(CarBrand::create($request->all()));
     }
 
     /**

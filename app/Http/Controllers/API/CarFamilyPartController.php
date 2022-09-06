@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\CarFamilyPart;
 use App\Http\Requests\StoreCarFamilyPartRequest;
 use App\Http\Requests\UpdateCarFamilyPartRequest;
+use App\Models\CarFamilyPart;
 
 class CarFamilyPartController extends Controller
 {

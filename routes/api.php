@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CarBrandController;
-use App\Http\Controllers\CarModelController;
-use App\Http\Controllers\CarFamilyPartController;
+use App\Http\Controllers\API\CarModelController;
+use App\Http\Controllers\API\CarFamilyPartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,8 +58,7 @@ Route::group(['middleware'=> ['auth:sanctum']], function (){
     // Partes
     Route::apiResource('admin/part',CarBrandController::class);
 
-    // Familia de partes
-    Route::apiResource('admin/brand',CarBrandController::class);
+
 
 
 /*
