@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Resources\API;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-// use Illuminate\Support\Str;
 
-class CarBrandResource extends JsonResource
+class CarModelResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,14 +14,6 @@ class CarBrandResource extends JsonResource
      */
     public function toArray($request)
     {
-        // Defaul Assign
-        // return parent::toArray($request);
-
-
-        // Estructura para definicion
-        return [
-
-        ];
-
+        return parent::toArray($request);
     }
 }
