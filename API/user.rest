@@ -13,3 +13,12 @@ Content-Type: application/json
 }
 
 
+##############################################
+POST {{ URL }}/login/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email":"saotand@gmail.com",
+    "password":"d0708aca"
+}
