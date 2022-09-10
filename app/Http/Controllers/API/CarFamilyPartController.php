@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreCarFamilyPartRequest;
-use App\Http\Requests\UpdateCarFamilyPartRequest;
+use App\Http\Requests\API\StoreCarFamilyPartRequest;
+use App\Http\Requests\API\UpdateCarFamilyPartRequest;
 use App\Models\CarFamilyPart;
 
 class CarFamilyPartController extends Controller
@@ -17,6 +17,8 @@ class CarFamilyPartController extends Controller
     public function index()
     {
         //
+        return response();
+
     }
 
     /**
@@ -28,29 +30,35 @@ class CarFamilyPartController extends Controller
     public function show(CarFamilyPart $carFamilyPart)
     {
         //
+        return response();
+
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCarFamilyPartRequest  $request
+     * @param  \App\Http\Requests\API\StoreCarFamilyPartRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreCarFamilyPartRequest $request)
     {
         //
+        return response();
+
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCarFamilyPartRequest  $request
+     * @param  \App\Http\Requests\API\UpdateCarFamilyPartRequest  $request
      * @param  \App\Models\CarFamilyPart  $carFamilyPart
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateCarFamilyPartRequest $request, CarFamilyPart $carFamilyPart)
     {
         //
+        return response();
+
     }
 
     /**
@@ -62,5 +70,7 @@ class CarFamilyPartController extends Controller
     public function destroy(CarFamilyPart $carFamilyPart)
     {
         //
+        return response();
+
     }
 }
