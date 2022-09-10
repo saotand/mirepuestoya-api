@@ -15,13 +15,14 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->enum('type', ['admin','mod','pub','seller','user'])->default('user'); // Administrador, Moderador, Publicidad, Vendedor(tienda), Usuario (comprador)
-            $table->rememberToken();
-            $table->timestamps();
+            $table->string('name')->comment('Nombre de Usuario');
+            $table->string('last')->nullable()->comment('Apellido de Usuario');
+            $table->string('email')->unique()->comment('Correo electronico');
+            $table->timestamp('email_verified_at')->nullable()->comment('Verificacion de correo');
+            $table->string('password')->comment('Contraseña');
+            $table->enum('type', ['admin','mod','pub','seller','user'])->default('user')->comment('Tipo de Usuario'); // Administrador, Moderador, Publicidad, Vendedor(tienda), Usuario (comprador)
+            $table->rememberToken()->comment('Token recordatorio');
+            $table->timestamps()->comment('estampas de tiempo');
         });
     }
 
