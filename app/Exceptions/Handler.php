@@ -2,11 +2,14 @@
 
 namespace App\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Throwable;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Symfony\Component\Routing\Exception\RouteNotFoundException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Routing\Exception\MethodNotAllowedException;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
+use Throwable;
 
 
 class Handler extends ExceptionHandler
@@ -44,12 +47,21 @@ class Handler extends ExceptionHandler
     }
 
     public function render($request, Throwable $exception){
+
+        if($exception instanceof MethodNotAllowedHttpException){
+            return response()->json(["message"=>false,"error"=>"No se puede acceder a esta recurso"],405);
+        }
+
+        if($exception instanceof NotFoundHttpException){
+            return response()->json(["message"=>false,"error"=>"No existe este recurso"],404);
+        }
+
         if($exception instanceof ModelNotFoundException){
             return response()->json(["message"=>false,"error"=>"No se ha encontrado"],400);
         }
 
         if($exception instanceof RouteNotFoundException){
-            return response()->json(["message"=>false,"error"=>"No tiene permiso para acceder a esta ruta"],401);
+            return response()->json(["message"=>false,"error"=>"No tiene permiso para acceder a esta recurso"],401);
         }
 
         return parent::render($request, $exception);
