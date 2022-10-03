@@ -5,7 +5,6 @@
 GET {{ URL }}/carbrand/
 Accept: application/json
 
-
 ##############################################
 GET {{ URL }}/carmodel/1
 Accept: application/json

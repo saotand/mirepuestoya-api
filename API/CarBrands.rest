@@ -1,5 +1,5 @@
 @URL=http://127.0.0.1:8000/api
-@TOKEN=123123
+@TOKEN=Bearer 4|25SMACZteCJYD94YahVe7UoE4EVtibXpruRVrVdb
 
 
 ##############################################
@@ -9,4 +9,6 @@ Accept: application/json
 ##############################################
 GET {{ URL }}/admin/brand/
 Accept: application/json
-Authorization: Bearer
+Authorization: {{TOKEN}}
+
+##############################################
