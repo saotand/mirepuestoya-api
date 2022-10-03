@@ -1,11 +1,11 @@
 <?php
 
-// use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Http\Request;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\CarBrandController;
-use App\Http\Controllers\API\CarModelController;
 use App\Http\Controllers\API\CarFamilyPartController;
+use App\Http\Controllers\API\CarModelController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 */
 
+// Rutas para uso de formulario (Publico)
+Route::get('carbrand', [CarBrandController::class,'index_home']);
+Route::get('carmodel/{brand}', [CarModelController::class,'index_home']);
+
 // Registro de usuarios
 Route::post('register', [AuthController::class , 'registro']);
 
@@ -33,17 +37,7 @@ Route::post('login', [AuthController::class , 'acceso']);
 // Logout de Usuarios
 Route::post('logout', [AuthController::class , 'salida'])->middleware('auth:sanctum');
 
-
-// Rutas para formualrio de inicio (home)
-
-    // Rutas para uso de formulario (Publico)
-
-
-    Route::get('carbrand', [CarBrandController::class,'index_home']);
-    Route::get('carmodel/{brand}', [CarModelController::class,'index_home']);
-
-
-// Grupo de Rutas con Token
+// Grupo de Rutas con Autorizacion
 Route::group(['middleware'=> ['auth:sanctum']], function (){
 
     // Marcas
@@ -57,9 +51,6 @@ Route::group(['middleware'=> ['auth:sanctum']], function (){
 
     // Partes
     Route::apiResource('admin/part',CarBrandController::class);
-
-
-
 
 /*
     Route::get('admin/carbrands',[CarBrandController::class,'index']);
