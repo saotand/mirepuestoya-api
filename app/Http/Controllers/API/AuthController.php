@@ -14,7 +14,6 @@ use Illuminate\Validation\ValidationException;
 class AuthController extends Controller
 {
     public function registro(RegisterRequest $request){
-
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
@@ -26,20 +25,16 @@ class AuthController extends Controller
     }
 
     public function acceso(AuthRequest $request){
-
+        // Capturar el usuario
         $user = User::where('email', $request->email)->first();
-
         if(!$user || !Hash::check($request->password,$user->password)){
             throw ValidationException::withMessages(['message'=> ['Credenciales son Incorrectas']]);
         }
-
         $token = $user->createToken($request->email)->plainTextToken;
-
         return response()->json([
             "message" => "Bienvenido, ".$user->name,
             "token" => $token
         ]);
-
     }
 
     public function salida( Request $request){
