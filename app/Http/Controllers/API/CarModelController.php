@@ -20,6 +20,10 @@ class CarModelController extends Controller
     public function index_home(CarBrand $brand){
         $brand_id = $brand->id;
         $models = CarModelResourceSelect::Collection(CarModel::where('car_brands_id',$brand_id)->orderBy('counter',"desc")->get());
+        if(!count($models)){
+            $models = [['value' => 0, 'text' => 'Selecciona una marca con modelos']];
+        }
+
         return response(['message'=>'OK','data'=>$models],200,);
     }
 
