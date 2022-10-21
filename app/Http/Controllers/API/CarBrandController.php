@@ -18,7 +18,7 @@ class CarBrandController extends Controller {
 
      // Index para formulario home
     public function index_home(){
-        $CarBrands = CarBrandResourceSelect::collection(CarBrand::where('active',true)->orderBy('counter',"desc")->get());
+        $CarBrands = CarBrandResourceSelect::collection(CarBrand::where('car_brands.active', true)->join('car_models','car_brands.ID','=','car_models.ID')->orderBy('car_brands.counter', "desc")->get());
         return response(['message'=>'OK','data'=>$CarBrands],200);
     }
 
