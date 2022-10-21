@@ -2,9 +2,9 @@
 @TOKEN=123123
 
 ##############################################
-GET {{ URL }}/carbrand/
+GET {{ URL }}/carmodel/
 Accept: application/json
 
 ##############################################
-GET {{ URL }}/carmodel/1
+GET {{ URL }}/carmodel/3
 Accept: application/json
